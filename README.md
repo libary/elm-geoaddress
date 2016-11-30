@@ -1,6 +1,6 @@
 # elm-geoaddress
 
-работает:
+нет ошибки:
 https://libary.github.io/elm-geoaddress/dst/index.html
 
 ошибка:
