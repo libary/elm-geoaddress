@@ -47,7 +47,7 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ input [ type_ "text", id "address", onInput Change ] [] --[ text <| toString model.address ]
+        [ input [ type_ "text", id "address" ] [] --[ text <| toString model.address ]
         , button [onClick Process] [text "Найти"]
         , text (toString model)
         ]

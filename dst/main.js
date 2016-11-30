@@ -8534,9 +8534,6 @@ var _user$project$GeoAddress$subscriptions = function (model) {
 	return _user$project$GeoAddress$suggestions(_user$project$GeoAddress$Suggest);
 };
 var _user$project$GeoAddress$Process = {ctor: 'Process'};
-var _user$project$GeoAddress$Change = function (a) {
-	return {ctor: 'Change', _0: a};
-};
 var _user$project$GeoAddress$view = function (model) {
 	return A2(
 		_elm_lang$html$Html$div,
@@ -8551,11 +8548,7 @@ var _user$project$GeoAddress$view = function (model) {
 					_1: {
 						ctor: '::',
 						_0: _elm_lang$html$Html_Attributes$id('address'),
-						_1: {
-							ctor: '::',
-							_0: _elm_lang$html$Html_Events$onInput(_user$project$GeoAddress$Change),
-							_1: {ctor: '[]'}
-						}
+						_1: {ctor: '[]'}
 					}
 				},
 				{ctor: '[]'}),
@@ -8591,6 +8584,9 @@ var _user$project$GeoAddress$main = _elm_lang$html$Html$programWithFlags(
 				{address: address});
 		},
 		A2(_elm_lang$core$Json_Decode$field, 'address', _elm_lang$core$Json_Decode$string)));
+var _user$project$GeoAddress$Change = function (a) {
+	return {ctor: 'Change', _0: a};
+};
 
 var Elm = {};
 Elm['GeoAddress'] = Elm['GeoAddress'] || {};
